@@ -1,5 +1,35 @@
 import { useNavigate } from "react-router-dom";
 
+/* ⭐ STAR RATING COMPONENT */
+const StarRating = ({ rating }) => {
+  const filledStars = Math.floor(rating);
+  const totalStars = 5;
+
+  return (
+    <div className="flex gap-1">
+      {Array.from({ length: totalStars }).map((_, i) => (
+        <svg
+          key={i}
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill={i < filledStars ? "currentColor" : "none"}
+          stroke="currentColor"
+          className={`w-5 h-5 ${
+            i < filledStars ? "text-yellow-400" : "text-gray-400"
+          }`}
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M11.48 3.499a.75.75 0 011.04 0l2.86 2.93 4.05.59a.75.75 0 01.42 1.28l-2.93 2.86.69 4.03a.75.75 0 01-1.09.79L12 14.77l-3.62 1.9a.75.75 0 01-1.09-.79l.69-4.03-2.93-2.86a.75.75 0 01.42-1.28l4.05-.59 2.86-2.93z"
+          />
+        </svg>
+      ))}
+    </div>
+  );
+};
+
 const ProductCard = ({ product }) => {
   const navigate = useNavigate();
 
@@ -59,10 +89,13 @@ const ProductCard = ({ product }) => {
           {product.description}
         </p>
 
-        {/* RATING */}
-        <p className="text-sm mt-3">
-          Rating : {product.rating}
-        </p>
+        {/* ⭐ RATING */}
+        <div className="flex items-center gap-2 mt-4">
+          <StarRating rating={product.rating} />
+          <span className="text-xs opacity-80">
+            ({product.rating})
+          </span>
+        </div>
 
         {/* FOOTER */}
         <div className="mt-auto flex justify-between items-center pt-4">

@@ -3,7 +3,7 @@ const SearchBar = ({ value, onChange }) => {
     <div className="mt-4 mb-6">
       <input
         type="text"
-        placeholder="Cari produk..."
+        placeholder="Search products..."
         value={value}
         onChange={(e) => onChange(e.target.value)}
         className="

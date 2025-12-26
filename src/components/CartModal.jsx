@@ -13,7 +13,7 @@ const CartModal = () => {
   if (!open) return null;
 
   const checkout = () => {
-    alert("Terima kasih sudah membeli 🙏");
+    alert("Thank You for Your Purchase 🙏");
     clearCart();
     setOpen(false);
   };
@@ -27,7 +27,7 @@ const CartModal = () => {
 
         {cart.length === 0 ? (
           <p className="text-sm text-gray-500">
-            Cart masih kosong
+            Cart Empty
           </p>
         ) : (
           <>
@@ -42,7 +42,7 @@ const CartModal = () => {
                       {item.title}
                     </p>
                     <p className="text-sm text-gray-500">
-                      {item.qty} x Rp{item.price}
+                      {item.qty} x ${item.finalPrice.toFixed(2)}
                     </p>
                   </div>
 
@@ -50,7 +50,7 @@ const CartModal = () => {
                     onClick={() => removeFromCart(item.id)}
                     className="text-red-500 text-sm"
                   >
-                    Hapus
+                    Delete
                   </button>
                 </div>
               ))}
@@ -58,7 +58,7 @@ const CartModal = () => {
 
             <div className="border-t mt-4 pt-4 flex justify-between font-semibold">
               <span>Total</span>
-              <span>Rp{totalPrice.toFixed(2)}</span>
+              <span>${totalPrice.toFixed(2)}</span>
             </div>
 
             <button
@@ -74,7 +74,7 @@ const CartModal = () => {
           onClick={() => setOpen(false)}
           className="mt-4 text-sm text-gray-500 w-full"
         >
-          Tutup
+          Close
         </button>
       </div>
     </div>
