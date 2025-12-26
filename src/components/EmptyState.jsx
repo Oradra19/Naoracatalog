@@ -8,11 +8,11 @@ const EmptyState = () => {
       />
 
       <h3 className="text-lg font-semibold text-gray-600">
-        Produk tidak ditemukan
+        Product not Found
       </h3>
 
       <p className="text-sm text-gray-400 mt-1">
-        Coba gunakan kata kunci lain
+        Try searching with different keywords.
       </p>
     </div>
   );
