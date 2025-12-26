@@ -50,28 +50,22 @@ INSTALLATION
 1. Clone repository
 
 ```
-git clone https://github.com/username/web-catalog.git
+git clone https://github.com/Oradra19/Naoracatalog.git
 ```
 
-2. Masuk ke folder project
-
-```
-cd web-catalog
-```
-
-3. Install dependencies
+2. Install dependencies
 
 ```
 npm install
 ```
 
-4. Jalankan aplikasi
+3. Jalankan aplikasi
 
 ```
 npm run dev
 ```
 
-5. Buka di browser
+4. Buka di browser
 ```
 http://localhost:5173
 ```
