@@ -1,8 +1,83 @@
-# React + Vite
+# Naora Web Catalog Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+------------------------------------------------------------
 
-Currently, two official plugins are available:
+Web Catalog Application adalah aplikasi berbasis web untuk
+menampilkan daftar produk secara interaktif.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Aplikasi ini memungkinkan pengguna untuk:
+- Melihat katalog produk
+- Mencari produk
+- Memfilter berdasarkan kategori
+- Melihat detail produk
+- Menambahkan produk ke keranjang
+- Melakukan checkout sederhana
+
+------------------------------------------------------------
+
+FEATURES
+
+------------------------------------------------------------
+
+- Product Catalog
+- Search Product
+- Category Filter
+- Product Detail Page
+- Discount Price Calculation
+- Shopping Cart
+- Total Price Calculation
+- Responsive Design
+
+------------------------------------------------------------
+
+TECH STACK
+
+------------------------------------------------------------
+
+- React JS
+- React Router DOM
+- Axios
+- Tailwind CSS
+- Context API
+- Framer Motion
+
+------------------------------------------------------------
+
+INSTALLATION
+
+------------------------------------------------------------
+
+1. Clone repository
+
+```git clone https://github.com/username/web-catalog.git```
+
+2. Masuk ke folder project
+
+```cd web-catalog```
+
+3. Install dependencies
+
+```npm install```
+
+4. Jalankan aplikasi
+
+```npm run dev```
+
+5. Buka di browser
+
+http://localhost:5173
+
+------------------------------------------------------------
+
+PROJECT NOTES
+
+------------------------------------------------------------
+
+- Data produk diambil dari API Public menggunakan Axios
+- Global state (cart) dikelola menggunakan Context API
+- Perhitungan harga sudah memperhitungkan diskon
+- Penanganan angka desimal menggunakan pembulatan aman
+- Struktur project dibuat modular dan scalable
+
+
+
