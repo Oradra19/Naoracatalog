@@ -49,19 +49,27 @@ INSTALLATION
 
 1. Clone repository
 
-```git clone https://github.com/username/web-catalog.git```
+```
+git clone https://github.com/username/web-catalog.git
+```
 
 2. Masuk ke folder project
 
-```cd web-catalog```
+```
+cd web-catalog
+```
 
 3. Install dependencies
 
-```npm install```
+```
+npm install
+```
 
 4. Jalankan aplikasi
 
-```npm run dev```
+```
+npm run dev
+```
 
 5. Buka di browser
 
